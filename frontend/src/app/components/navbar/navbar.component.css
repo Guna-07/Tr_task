@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #1976D2;
+  color: white;
+  padding: 18px ;
+  
+}
+
+.navbar span {
+  font-size: 24px;
+}
+
+.navbar-links {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 69%;
+}
+
+.navbar-links a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.profile-picture {
+  position: absolute;
+  top: 19%;
+  right: 2%;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}

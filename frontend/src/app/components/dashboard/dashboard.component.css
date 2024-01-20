@@ -1,0 +1,63 @@
+
+  .maindiv {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: space-between; /* Add space between items */
+    padding: 10px;
+  }
+  
+  .input {
+    flex: 1 0 50%; /* Take up 50% of the available space, with a maximum width of 50% */
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in total width/height */
+    width: 100%; /* Make it 100% width on small screens */
+  }
+  
+  .image-container {
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
+  
+  /* Additional styles for input and button */
+  .input input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1976D2; /* Green */
+    color: #fff;
+    border: 1px solid #2196F3;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+}
+ 
+button:hover {
+    background-color: #1565c0;
+}
+
+
+
+.option-container {
+  display: flex;
+  margin-right: auto;
+}
+
+.refresh {
+  font-size: 50px; /* Adjust the font size as needed */
+  margin-right: 10px; /* Add some margin to the right for spacing */
+}

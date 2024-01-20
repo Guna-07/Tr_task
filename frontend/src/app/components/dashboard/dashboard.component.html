@@ -1,0 +1,34 @@
+<div class="dashboard">
+    <div class="navbar" style="padding:10px;">
+        <app-navbar style="width:100%"></app-navbar>
+    </div>
+
+    <div class="maindiv"> 
+        <div class="input">
+            <h1><label for="name"><b>Item name</b></label></h1>
+            <input type="text" name="name" placeholder="name" [(ngModel)]="itemName" /><br><br>
+            <h1><label for="item"><b>Prize</b></label></h1>
+            <input type="text" name="item" placeholder="prize" [(ngModel)]="itemPrize" /><br><br>
+            <button (click)="onClick()" title="Add product">Add</button>
+        </div>
+
+        <div class="option-container">
+            <div class="option">
+                <div class="refresh" (click)="refresh()" title="Refresh">
+                    <mat-icon>refresh</mat-icon>
+                </div>
+                <p>ID | ITEM NAME | ITEM PRICE </p>
+               
+                <div *ngFor="let gro of groceries">
+                    <p>[  {{gro.id}} , {{gro.item_name}} , {{gro.price}} ]</p>
+                </div>
+                <!-- <img src="../../../assets/charts.webp" alt="Options Image"> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container" cdkDrag>
+        <app-charts class="resizable"></app-charts>
+    </div>
+</div>
+
